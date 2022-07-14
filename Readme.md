@@ -1,7 +1,7 @@
 # <div align="center">HyperDev Case</div>
 
 </br>
-You can reach my project that I prepared using. Net 6 and MVC.
+You can reach my project that I prepared using .Net 6 and MVC.
 
 </br>
 
