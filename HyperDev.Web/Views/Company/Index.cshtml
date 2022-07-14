@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Company>
+
+@{
+    ViewData["Title"] = "";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+
+}
+
+
+<table class="table">
+
+    <tr>
+
+        <td>İsim</td>
+        <td>Şirket Tipi</td>
+        <td>Vergi Dairesi</td>
+        <td>Vergi Numarası</td>
+        <td>Şehir</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Type</td>
+            <td>@item.TaxAdministration</td>
+            <td>@item.TaxNumber</td>
+            <td>@item.City</td>
+
+
+        </tr>
+
+    }
+
+
+</table>
+
+

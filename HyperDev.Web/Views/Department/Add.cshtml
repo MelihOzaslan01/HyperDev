@@ -1,0 +1,43 @@
+﻿@model Department
+@{
+    ViewData["Title"] = "Departman Giriş";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1 style="text-align:center">Departman Bilgileri</h1>
+<form asp-action="Add" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Departman Adı</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TopDepartment" class="control-label">Alt Departman Adı</label>
+        <input asp-for="TopDepartment" class="form-control" />
+        <span asp-validation-for="TopDepartment" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SubDepartment" class="control-label">Üst Departman Adı</label>
+        <input asp-for="SubDepartment" class="form-control" />
+        <span asp-validation-for="SubDepartment" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CompanyId" class="control-label">Şirket Id</label>
+        <input asp-for="CompanyId" class="form-control" />
+        <span asp-validation-for="CompanyId" class="text-danger"></span>
+    </div>
+
+
+    <div class="form-group">
+        <br />
+        <input type="submit" value="DEPARTMAN EKLE" class="btn btn-primary btn-sm" />
+    </div>
+
+
+</form>
+
+

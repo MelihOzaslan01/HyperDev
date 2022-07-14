@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Department>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table">
+    <tr>
+        <td>İsim</td>
+        <td>Alt Departman</td>
+        <td>Üst Departman</td>
+        <td>Şirket Id</td>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.TopDepartment</td>
+            <td>@item.SubDepartment</td>
+            <td>@item.CompanyId</td>
+        </tr>
+    }
+</table>
